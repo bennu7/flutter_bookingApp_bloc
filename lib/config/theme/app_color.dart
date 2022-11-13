@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-class AppColor{
+class AppColor {
   // *inkColors
   static const Color ink01 = Color(0xFF191D21);
   static const Color ink02 = Color(0xFF656F77);
@@ -15,4 +15,12 @@ class AppColor{
   static const Color utilityInfo = Color(0xFF91D7E0);
   static const Color utilityWarning = Color(0xFFFFAC4B);
   static const Color utilityDanger = Color(0xFFFF5A5A);
+
+  // *accentColors
+  static const Color accentBlue = Color(0xFFCBE3FF);
+  static const Color accentGreen = Color(0xFFD9FFF8);
+  static const Color accentPurple = Color(0xFFF2E8FF);
+  static const Color accentOrange = Color(0xFFFFD1B6);
+  static const Color accentPink = Color(0xFFFFDBF5);
+  static const Color accentYellow = Color(0xFFFFF3B6);
 }
