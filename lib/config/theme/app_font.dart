@@ -77,4 +77,24 @@ class AppFont {
     fontSize: 12,
     color: Colors.black,
   );
+  static const TextStyle componentLarge = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 16,
+    color: Colors.black,
+  );
+  static  TextStyle get componentMediumBold => GoogleFonts.poppins(
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+    color: Colors.black,
+  );
+  static const TextStyle componentMedium = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontSize: 14,
+    color: Colors.black,
+  );
+  static TextStyle get componentSmall => GoogleFonts.poppins(
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+  );
 }
