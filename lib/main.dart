@@ -1,4 +1,5 @@
 import 'package:bookingapp_bloc/data/src/img_string.dart';
+import 'package:bookingapp_bloc/data/src/onboarding/onboarding_view.dart';
 import 'package:bookingapp_bloc/presentation/widget/button/primary_button.dart';
 import 'package:flutter/material.dart';
 
@@ -12,28 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // fontFamily: GoogleFonts.poppins().fontFamily,
         fontFamily: 'Poppins',
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Booking App'),
-        ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Center(
-              child: PrimaryButton(
-                onPressed: () {},
-                width: 120,
-                type: PrimaryButtonType.type3,
-              ),
-            ),
-            Image.asset(ImgString.abstract0),
-          ],
-        ),
-      ),
+      home:const OnboardingPage(),
     );
   }
 }

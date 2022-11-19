@@ -22,12 +22,32 @@ class AppFont {
     fontSize: 32,
     color: Colors.black,
   );
+  static const TextStyle heading0 = TextStyle(
+    fontWeight: FontWeight.w700,
+    fontSize: 72,
+    color: Colors.black,
+  );
   static const TextStyle heading1 = TextStyle(
+    fontWeight: FontWeight.w700,
+    fontSize: 56,
+    color: Colors.black,
+  );
+  static const TextStyle heading2 = TextStyle(
+    fontWeight: FontWeight.w700,
+    fontSize: 40,
+    color: Colors.black,
+  );
+  static const TextStyle heading3 = TextStyle(
+    fontWeight: FontWeight.w700,
+    fontSize: 32,
+    color: Colors.black,
+  );
+  static const TextStyle heading4 = TextStyle(
     fontWeight: FontWeight.w700,
     fontSize: 24,
     color: Colors.black,
   );
-  static const TextStyle heading2 = TextStyle(
+  static const TextStyle heading5 = TextStyle(
     fontWeight: FontWeight.w700,
     fontSize: 20,
     color: Colors.black,
@@ -82,19 +102,19 @@ class AppFont {
     fontSize: 16,
     color: Colors.black,
   );
-  static  TextStyle get componentMediumBold => GoogleFonts.poppins(
-    fontWeight: FontWeight.w600,
-    fontSize: 14,
-    color: Colors.black,
-  );
+  static TextStyle get componentMediumBold => GoogleFonts.poppins(
+        fontWeight: FontWeight.w600,
+        fontSize: 14,
+        color: Colors.black,
+      );
   static const TextStyle componentMedium = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: 14,
     color: Colors.black,
   );
   static TextStyle get componentSmall => GoogleFonts.poppins(
-    fontSize: 12,
-    fontWeight: FontWeight.w600,
-    color: Colors.white,
-  );
+        fontSize: 12,
+        fontWeight: FontWeight.w600,
+        color: Colors.white,
+      );
 }
