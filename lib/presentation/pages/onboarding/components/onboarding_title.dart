@@ -22,7 +22,7 @@ class OnboardingTitle extends StatelessWidget {
             Text(
               cubit.state.onboardingList[cubit.state.currentIndex].title
                   .toString(),
-              style: AppFont.heading3,
+              style: AppFont.h3,
               textAlign: TextAlign.center,
             ),
             8.0.height,
