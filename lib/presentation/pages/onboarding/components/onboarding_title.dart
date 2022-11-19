@@ -1,6 +1,6 @@
 import 'package:bookingapp_bloc/config/config.dart';
-import 'package:bookingapp_bloc/data/model/onboarding/onboarding.dart';
-import 'package:bookingapp_bloc/data/src/onboarding/onboarding_state.dart';
+import 'package:bookingapp_bloc/extension/extension.dart';
+import 'package:bookingapp_bloc/presentation/pages/onboarding/onboarding_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -25,13 +25,12 @@ class OnboardingTitle extends StatelessWidget {
               style: AppFont.heading3,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 8),
+            8.0.height,
             Text(
                 cubit.state.onboardingList[cubit.state.currentIndex].description
                     .toString(),
                 textAlign: TextAlign.center,
-                style: AppFont.paragraphMedium
-            ),
+                style: AppFont.paragraphMedium),
           ],
         );
       },

@@ -1,9 +1,9 @@
 import 'package:bookingapp_bloc/config/config.dart';
 import 'package:flutter/material.dart';
 
-class PrimaryButton extends StatelessWidget {
-  // *tambahkan opsi parameter type untuk diberikan nilai default nya = PrimaryButtonType.type1
-  const PrimaryButton({
+class SecondaryButton extends StatelessWidget {
+  // *tambahkan opsi parameter type untuk diberikan nilai default nya = SecondaryButtonType.type1
+  const SecondaryButton({
     Key? key,
     this.type = PrimaryButtonType.type1,
     required this.onPressed,
@@ -34,8 +34,11 @@ class PrimaryButton extends StatelessWidget {
       height: height,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColor.ink01,
+          backgroundColor: AppColor.ink06,
           shape: RoundedRectangleBorder(
+            side: const BorderSide(
+              color: AppColor.ink01,
+            ),
             borderRadius: BorderRadius.circular(4),
           ),
         ),
@@ -43,7 +46,7 @@ class PrimaryButton extends StatelessWidget {
         child: Text(
           text,
           style: AppFont.componentSmall.copyWith(
-            color: AppColor.ink06,
+            color: AppColor.ink01,
           ),
         ),
       ),

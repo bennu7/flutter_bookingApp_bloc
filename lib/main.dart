@@ -1,5 +1,5 @@
 import 'package:bookingapp_bloc/data/src/img_string.dart';
-import 'package:bookingapp_bloc/data/src/onboarding/onboarding_view.dart';
+import 'package:bookingapp_bloc/presentation/pages/onboarding/onboarding_view.dart';
 import 'package:bookingapp_bloc/presentation/widget/button/primary_button.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      home:const OnboardingPage(),
+      home: const OnboardingPage(),
     );
   }
 }

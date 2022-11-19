@@ -1,5 +1,5 @@
 import 'package:bookingapp_bloc/config/config.dart';
-import 'package:bookingapp_bloc/data/src/onboarding/onboarding_state.dart';
+import 'package:bookingapp_bloc/presentation/pages/onboarding/onboarding_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,19 +19,22 @@ class OnboardingIndicator extends StatelessWidget {
           children: List.generate(
             growable: false,
             cubit.state.onboardingList.length,
-                (index) =>
-            cubit.state.currentIndex == index
-                ? _activeIndicator()
-                : _inactiveIndicator(),
+            (index) {
+              print("index: $index");
+              print("cubit.state.currentIndex: ${cubit.state.currentIndex}");
+              return cubit.state.currentIndex == index
+                  ? _activeIndicator(index)
+                  : _inactiveIndicator(index);
+            },
           ),
         );
       },
     );
   }
 
-  Widget _activeIndicator() {
+  Widget _activeIndicator(int index) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 6),
+      margin: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
       width: 16,
       height: 6,
       decoration: BoxDecoration(
@@ -41,9 +44,9 @@ class OnboardingIndicator extends StatelessWidget {
     );
   }
 
-  Widget _inactiveIndicator() {
+  Widget _inactiveIndicator(int index) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 6),
+      margin: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
       width: 6,
       height: 6,
       decoration: BoxDecoration(
