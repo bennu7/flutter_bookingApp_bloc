@@ -1,5 +1,4 @@
-import 'package:bookingapp_bloc/presentation/pages/onboarding/onboarding_view.dart';
-import 'package:bookingapp_bloc/presentation/pages/welcome/welcome_view.dart';
+import 'package:bookingapp_bloc/presentation/pages/welcome/login/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: 'Poppins',
         ),
-        home: const WelcomePage(),
+        home: const LoginPage(),
       ),
     );
   }

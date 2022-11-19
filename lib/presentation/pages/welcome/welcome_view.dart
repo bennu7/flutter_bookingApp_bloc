@@ -1,7 +1,7 @@
 import 'package:bookingapp_bloc/config/theme/theme.dart';
-import 'package:bookingapp_bloc/presentation/pages/welcome/component/welcome_button.dart';
-import 'package:bookingapp_bloc/presentation/pages/welcome/component/welcome_image.dart';
-import 'package:bookingapp_bloc/presentation/pages/welcome/component/welcome_title.dart';
+import 'package:bookingapp_bloc/presentation/pages/welcome/components/welcome_button.dart';
+import 'package:bookingapp_bloc/presentation/pages/welcome/components/welcome_image.dart';
+import 'package:bookingapp_bloc/presentation/pages/welcome/components/welcome_title.dart';
 import 'package:bookingapp_bloc/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

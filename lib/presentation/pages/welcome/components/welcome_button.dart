@@ -1,6 +1,6 @@
 import 'package:bookingapp_bloc/config/theme/app_dimen.dart';
-import 'package:bookingapp_bloc/presentation/widget/button/primary_button.dart';
-import 'package:bookingapp_bloc/presentation/widget/button/secondary_button.dart';
+import 'package:bookingapp_bloc/presentation/widget/primary_button.dart';
+import 'package:bookingapp_bloc/presentation/widget/secondary_button.dart';
 import 'package:bookingapp_bloc/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
