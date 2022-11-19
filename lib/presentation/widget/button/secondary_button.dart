@@ -1,5 +1,6 @@
 import 'package:bookingapp_bloc/config/config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SecondaryButton extends StatelessWidget {
   // *tambahkan opsi parameter type untuk diberikan nilai default nya = SecondaryButtonType.type1
@@ -20,7 +21,6 @@ class SecondaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(type);
     return type == PrimaryButtonType.type1
         ? _type1(context)
         : type == PrimaryButtonType.type2
@@ -30,8 +30,8 @@ class SecondaryButton extends StatelessWidget {
 
   Widget _type1(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: height,
+      width: width.w,
+      height: height.h,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColor.ink06,
@@ -55,20 +55,23 @@ class SecondaryButton extends StatelessWidget {
 
   Widget _type2(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: 32,
+      width: width.w,
+      height: 32.h,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColor.ink01,
+          backgroundColor: AppColor.ink06,
           shape: RoundedRectangleBorder(
+            side: const BorderSide(
+              color: AppColor.ink01,
+            ),
             borderRadius: BorderRadius.circular(4),
           ),
         ),
         onPressed: onPressed,
         child: Text(
           text,
-          style: AppFont.componentMediumBold.copyWith(
-            color: AppColor.ink06,
+          style: AppFont.componentSmall.copyWith(
+            color: AppColor.ink01,
           ),
         ),
       ),
@@ -77,20 +80,23 @@ class SecondaryButton extends StatelessWidget {
 
   Widget _type3(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: 40,
+      width: width.w,
+      height: 40.h,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColor.ink01,
+          backgroundColor: AppColor.ink06,
           shape: RoundedRectangleBorder(
+            side: const BorderSide(
+              color: AppColor.ink01,
+            ),
             borderRadius: BorderRadius.circular(4),
           ),
         ),
         onPressed: onPressed,
         child: Text(
           text,
-          style: AppFont.componentLarge.copyWith(
-            color: AppColor.ink06,
+          style: AppFont.componentSmall.copyWith(
+            color: AppColor.ink01,
           ),
         ),
       ),

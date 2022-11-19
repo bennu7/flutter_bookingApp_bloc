@@ -1,5 +1,5 @@
 import 'package:bookingapp_bloc/config/config.dart';
-import 'package:bookingapp_bloc/extension/extension.dart';
+import 'package:bookingapp_bloc/utils/extension/extension.dart';
 import 'package:bookingapp_bloc/presentation/pages/onboarding/onboarding_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

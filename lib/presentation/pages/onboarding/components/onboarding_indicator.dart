@@ -20,8 +20,6 @@ class OnboardingIndicator extends StatelessWidget {
             growable: false,
             cubit.state.onboardingList.length,
             (index) {
-              print("index: $index");
-              print("cubit.state.currentIndex: ${cubit.state.currentIndex}");
               return cubit.state.currentIndex == index
                   ? _activeIndicator(index)
                   : _inactiveIndicator(index);

@@ -1,7 +1,6 @@
-import 'package:bookingapp_bloc/data/src/img_string.dart';
 import 'package:bookingapp_bloc/presentation/pages/onboarding/onboarding_view.dart';
-import 'package:bookingapp_bloc/presentation/widget/button/primary_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +11,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Poppins',
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          fontFamily: 'Poppins',
+        ),
+        home: const OnboardingPage(),
       ),
-      home: const OnboardingPage(),
     );
   }
 }

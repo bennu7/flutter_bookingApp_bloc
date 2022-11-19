@@ -1,119 +1,120 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppFont {
-  static const TextStyle hero = TextStyle(
+  static TextStyle hero = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 72,
+    fontSize: 72.sp,
     color: Colors.black,
   );
-  static const TextStyle display1 = TextStyle(
+  static TextStyle display1 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 56,
+    fontSize: 56.sp,
     color: Colors.black,
   );
-  static const TextStyle display2 = TextStyle(
+  static TextStyle display2 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 40,
+    fontSize: 40.sp,
     color: Colors.black,
   );
-  static const TextStyle display3 = TextStyle(
+  static TextStyle display3 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 32,
+    fontSize: 32.sp,
     color: Colors.black,
   );
-  static const TextStyle heading0 = TextStyle(
+  static TextStyle heading0 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 72,
+    fontSize: 72.sp,
     color: Colors.black,
   );
-  static const TextStyle heading1 = TextStyle(
+  static TextStyle heading1 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 56,
+    fontSize: 56.sp,
     color: Colors.black,
   );
-  static const TextStyle heading2 = TextStyle(
+  static TextStyle heading2 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 40,
+    fontSize: 40.sp,
     color: Colors.black,
   );
-  static const TextStyle heading3 = TextStyle(
+  static TextStyle heading3 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 32,
+    fontSize: 32.sp,
     color: Colors.black,
   );
-  static const TextStyle heading4 = TextStyle(
+  static TextStyle heading4 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 24,
+    fontSize: 24.sp,
     color: Colors.black,
   );
-  static const TextStyle heading5 = TextStyle(
+  static TextStyle heading5 = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 20,
+    fontSize: 20.sp,
     color: Colors.black,
   );
-  static const TextStyle paragraphLarge = TextStyle(
+  static TextStyle paragraphLarge = TextStyle(
     fontWeight: FontWeight.w400,
-    fontSize: 16,
+    fontSize: 16.sp,
     color: Colors.black,
   );
-  static const TextStyle paragraphLargeBold = TextStyle(
+  static TextStyle paragraphLargeBold = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 16,
+    fontSize: 16.sp,
     color: Colors.black,
   );
-  static const TextStyle paragraphMedium = TextStyle(
+  static TextStyle paragraphMedium = TextStyle(
     fontWeight: FontWeight.w400,
-    fontSize: 14,
+    fontSize: 14.sp,
     color: Colors.black,
   );
-  static const TextStyle paragraphMediumBold = TextStyle(
+  static TextStyle paragraphMediumBold = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 14,
+    fontSize: 14.sp,
     color: Colors.black,
   );
-  static const TextStyle paragraphSmall = TextStyle(
+  static TextStyle paragraphSmall = TextStyle(
     fontWeight: FontWeight.w400,
-    fontSize: 12,
+    fontSize: 12.sp,
     color: Colors.black,
   );
-  static const TextStyle paragraphSmallBold = TextStyle(
+  static TextStyle paragraphSmallBold = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 12,
+    fontSize: 12.sp,
     color: Colors.black,
   );
-  static const TextStyle buttonLarge = TextStyle(
+  static TextStyle buttonLarge = TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: 16,
+    fontSize: 16.sp,
     color: Colors.black,
   );
-  static const TextStyle buttonMedium = TextStyle(
+  static TextStyle buttonMedium = TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: 14,
+    fontSize: 14.sp,
     color: Colors.black,
   );
-  static const TextStyle buttonSmall = TextStyle(
+  static TextStyle buttonSmall = TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: 12,
+    fontSize: 12.sp,
     color: Colors.black,
   );
-  static const TextStyle componentLarge = TextStyle(
+  static TextStyle componentLarge = TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: 16,
+    fontSize: 16.sp,
     color: Colors.black,
   );
   static TextStyle get componentMediumBold => GoogleFonts.poppins(
         fontWeight: FontWeight.w600,
-        fontSize: 14,
+        fontSize: 14.sp,
         color: Colors.black,
       );
-  static const TextStyle componentMedium = TextStyle(
+  static TextStyle componentMedium = TextStyle(
     fontWeight: FontWeight.w400,
-    fontSize: 14,
+    fontSize: 14.sp,
     color: Colors.black,
   );
   static TextStyle get componentSmall => GoogleFonts.poppins(
-        fontSize: 12,
+        fontSize: 12.sp,
         fontWeight: FontWeight.w600,
         color: Colors.white,
       );

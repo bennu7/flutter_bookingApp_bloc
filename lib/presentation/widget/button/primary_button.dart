@@ -1,5 +1,6 @@
 import 'package:bookingapp_bloc/config/config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PrimaryButton extends StatelessWidget {
   // *tambahkan opsi parameter type untuk diberikan nilai default nya = PrimaryButtonType.type1
@@ -20,7 +21,6 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(type);
     return type == PrimaryButtonType.type1
         ? _type1(context)
         : type == PrimaryButtonType.type2
@@ -30,8 +30,8 @@ class PrimaryButton extends StatelessWidget {
 
   Widget _type1(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: height,
+      width: width.w,
+      height: height.h,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColor.ink01,
@@ -53,7 +53,7 @@ class PrimaryButton extends StatelessWidget {
   Widget _type2(BuildContext context) {
     return SizedBox(
       width: width,
-      height: 32,
+      height: 32.h,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColor.ink01,
@@ -74,8 +74,8 @@ class PrimaryButton extends StatelessWidget {
 
   Widget _type3(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: 40,
+      width: width.w,
+      height: 40.h,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColor.ink01,

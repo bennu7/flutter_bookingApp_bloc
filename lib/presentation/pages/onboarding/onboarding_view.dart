@@ -1,4 +1,4 @@
-import 'package:bookingapp_bloc/extension/extension.dart';
+import 'package:bookingapp_bloc/utils/extension/extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,8 +17,6 @@ class OnboardingPage extends StatelessWidget {
   }
 
   Widget _buildPage(BuildContext context) {
-    print(context);
-
     return Scaffold(
       body: SafeArea(
         child: Padding(
